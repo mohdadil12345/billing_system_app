@@ -3,8 +3,7 @@ const mongoose = require("mongoose")
 
 const itemSchema = ({
     name: String,
-    price: Number,
-  
+    price: { type: Number, min: 1},
 })
 
 

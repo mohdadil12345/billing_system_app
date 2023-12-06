@@ -3,6 +3,7 @@ require("dotenv").config()
 const cors = require("cors")
 const { connection } = require("./db")
 const { itemRouter } = require("./routes/item.routes")
+const { billRouter } = require("./routes/bill.routes")
 
 
 const app = express()
@@ -11,6 +12,7 @@ app.use(cors())
 
 
 app.use("/items", itemRouter)
+app.use("/bills", billRouter)
 
 
 app.listen(process.env.port, async() => {
