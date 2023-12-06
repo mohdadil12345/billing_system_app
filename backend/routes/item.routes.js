@@ -22,6 +22,21 @@ itemRouter.post("/add", async (req, res) => {
 
 
 
+// get
+itemRouter.get("/", async (req, res) => {
+
+    try {
+
+        const data = await itemModel.find()
+        res.status(200).json(data)
+
+    } catch (err) {
+        res.status(400).json({ msg: err.message })
+    }
+})
+
+
+
 
 itemRouter.patch("/update/:id", async (req, res) => {
     const { id } = req.params
