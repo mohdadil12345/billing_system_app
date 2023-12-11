@@ -37,13 +37,18 @@ function Item() {
 
 
 
-
+  const handdd = () => {
+    alert("kkk")
+  };
 
 
 
   return (
-    <div className="contain">
-        <h2>Add Items</h2>
+    <div className="contain modal">
+       <div className="llllll">
+        <button onClick={handdd}>❌</button>
+       </div>
+
       <form id="add_form" onSubmit={(e) => form_submit(e)}>
         <input
           type="text"

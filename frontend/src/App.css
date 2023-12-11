@@ -5,6 +5,7 @@
   margin: 0;
   text-decoration: none;
   box-sizing: border-box;
+  
 }
 
 .navbar{
@@ -51,7 +52,7 @@
 
 .select_tag{
 
-background-color: rgb(235, 235, 235);
+background-color: white;
 width: 220px;
 padding: 10px;
 margin: 10px auto;
@@ -63,6 +64,7 @@ border-radius: 4px;
   padding: 2px;
   border-radius: 4px;
   width: 200px;
+  background-color: white;
 }
 
 .select_tag input{
@@ -70,10 +72,12 @@ border-radius: 4px;
   border-radius: 4px;
   width: 200px;
   margin-top: 5px;
+  background-color: white;
 }
 .btn{
   display: flex;
   justify-content: flex-end;
+  background-color: white;
 }
 .select_tag button{
    background-color: tomato;
@@ -84,8 +88,15 @@ border-radius: 4px;
   cursor: pointer;
 }
 
+.container{
+  background-color: rgb(232, 232, 232); 
+}
+
 .main_cont{
   padding: 20px;
+  background-color: white;
+  width: 650px;
+  border-radius: 8px;
 }
 .cont_2{
   border: 1px solid rgb(216, 216, 216);
@@ -93,17 +104,66 @@ border-radius: 4px;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
+  background-color: white;
 }
 
 .info{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
+  
   
 }
 
-.item{
-
-  
-   /* border: 1px solid blue; */
+.info h3{
+  background-color: white;
 }
+.info h5{
+  background-color: white;
+}
+
+.item p{
+  background-color: white;
+  
+}
+
+.plus{
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 30px;
+   margin-left: 570px;  
+   cursor: pointer;
+}
+
+.total{
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  border: 1px solid rgb(216, 216, 216);
+}
+
+
+/* .modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  padding: 20px;
+  background-color: white;
+}
+
+.llllll{
+  display: flex;
+  justify-content: space-between;
+} */
