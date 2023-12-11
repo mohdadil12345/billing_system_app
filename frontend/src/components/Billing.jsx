@@ -27,6 +27,7 @@ function Billing() {
     try {
       const response = await fetch("http://localhost:8080/items");
       const data = await response.json();
+      console.log("data", data)
       setBill(data);
     } catch (error) {
       console.error("Error fetching data:", error.message);
@@ -37,6 +38,7 @@ function Billing() {
     try {
       const response = await fetch("http://localhost:8080/bills");
       const data = await response.json();
+      // console.log("bills", data)
       setPostBill(data);
     } catch (error) {
       console.error("Error fetching data:", error.message);
@@ -50,7 +52,8 @@ function Billing() {
 
   return (
     <div>
-      <select onChange={(e) => setItem(e.target.value)}>
+       <div className="select_tag">
+       <select onChange={(e) => setItem(e.target.value)}>
         {bill.length > 0 &&
           bill.map((ele) => (
             <option key={ele._id} value={ele._id}>
@@ -65,20 +68,28 @@ function Billing() {
         placeholder="quantity"
       />
       <br />
-      <button onClick={formSubmit}>Add</button>
+    <div className="btn">
+    <button onClick={formSubmit}>Add</button>
+    </div>
+       </div>
 
-      <div>
+      <div className="main_cont">
         {postBill.map((e) => (
-          <div key={e._id}>
+          <div className="cont_2" key={e._id}>
             {e.items.map((item) => (
-              <div key={item.item._id}>
-                <h3>name : {bill.find((e) => e._id === item.item._id)?.name}</h3>
-                <h5>price : {bill.find((e) => e._id === item.item._id)?.price}</h5>
+              <div className="item" key={item.item._id}>
+                 <div className="info">
+                 <h3>name : {bill.find((e) => e._id === item._id)?.name}</h3>
+                <h5>price : {bill.find((e) => e._id === item._id)?.price}</h5>
+                 </div>
                 <p>quantity: {item.quantity}</p>
               </div>
             ))}
           </div>
         ))}
+
+
+
       </div>
     </div>
   );

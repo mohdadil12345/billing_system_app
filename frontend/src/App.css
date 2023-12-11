@@ -48,3 +48,62 @@
   font-size: 600;
   border: none;
 }
+
+.select_tag{
+
+background-color: rgb(235, 235, 235);
+width: 220px;
+padding: 10px;
+margin: 10px auto;
+border-radius: 4px;
+
+}
+
+.select_tag select{
+  padding: 2px;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.select_tag input{
+  padding: 2px;
+  border-radius: 4px;
+  width: 200px;
+  margin-top: 5px;
+}
+.btn{
+  display: flex;
+  justify-content: flex-end;
+}
+.select_tag button{
+   background-color: tomato;
+   padding: 2px;
+   width: 50px;
+   border-radius: 4px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.main_cont{
+  padding: 20px;
+}
+.cont_2{
+  border: 1px solid rgb(216, 216, 216);
+  width: 600px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.item{
+
+  
+   /* border: 1px solid blue; */
+}
